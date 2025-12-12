@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vyuham</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="background-layer">
+        <div id="bg-image"></div>
+        <video id="bg-video" autoplay muted loop playsinline>
+            <source src="background.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <button id="settings-btn" aria-label="Settings">⚙️</button>
+
+    <div id="dashboard-grid"></div>
+
+    <div id="settings-modal" class="hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button id="close-settings">×</button>
+            </div>
+            <div class="modal-body">
+                <nav class="settings-nav">
+                    <button data-tab="layout" class="active">Layout</button>
+                    <button data-tab="quick-launch">Quick Launch</button>
+                    <button data-tab="reading-list">Reading List</button>
+                    <button data-tab="bookmarks">Bookmarks</button>
+                    <button data-tab="data">Data</button>
+                </nav>
+                <div class="settings-panels">
+                    <div id="panel-layout" class="panel active">
+                        <div class="setting-row">
+                            <label>Lock Layout</label>
+                            <input type="checkbox" id="lock-layout">
+                        </div>
+                        <button id="reset-layout-btn" class="danger-btn">Reset to Default Layout</button>
+                    </div>
+
+                    <div id="panel-quick-launch" class="panel">
+                        <div class="list-manager" id="ql-manager"></div>
+                        <button id="add-ql-btn" class="action-btn">+ Add Shortcut</button>
+                    </div>
+
+                    <div id="panel-reading-list" class="panel">
+                        <div class="list-manager" id="rl-manager"></div>
+                        <button id="add-rl-btn" class="action-btn">+ Add Link</button>
+                    </div>
+
+                    <div id="panel-bookmarks" class="panel">
+                        <p>System bookmarks are loaded automatically. Add custom ones here:</p>
+                        <div class="list-manager" id="bm-manager"></div>
+                        <button id="add-bm-btn" class="action-btn">+ Add Custom Bookmark</button>
+                    </div>
+
+                    <div id="panel-data" class="panel">
+                        <button id="export-btn" class="action-btn">Export Layout JSON</button>
+                        <div class="file-upload">
+                            <label for="import-file" class="action-btn outline">Import Layout JSON</label>
+                            <input type="file" id="import-file" accept=".json">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
