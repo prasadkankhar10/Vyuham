@@ -1,60 +1,210 @@
-# Vyuham
+# Vyuham 🚀
 
-Vyuham is a modern, customizable Chrome new tab dashboard extension built with a beautiful glassmorphism design. It replaces your default new tab page with a powerful, personal productivity dashboard.
+*A modern glassmorphism-based Chrome new tab dashboard designed for clarity, focus, and productivity.*
 
 
-## Features
 
-### Customizable Widgets (Details)
 
-- **Clock & Timer**: Displays the current time and date. Switch to timer mode for countdowns with alarm and notification support.
-- **Google Search**: Integrated search bar for quick Google queries, with voice search and Google Lens shortcuts.
-- **AI Art Background**: Shows a unique, AI-generated art wallpaper each time, with click-to-view in full resolution.
-- **Quick Launch Shortcuts**: Grid of user-defined shortcut icons for fast access to favorite sites, using site favicons.
-- **Reading List**: Curated list of reading links (blogs, news, etc.), customizable in settings, with favicons for each link.
-- **Bookmarks (Chrome & Custom)**: Displays your Chrome bookmarks in a folder structure and allows adding custom bookmarks.
-- **Calendar**: Visual monthly calendar with today highlighted, showing days of the week and all days in the month.
-- **Pomodoro Timer**: Productivity timer for work/break cycles, with notifications and customizable durations.
-- **Music Player (SoundCloud/Spotify)**: Embed a SoundCloud or Spotify player. Paste a music URL to listen while you work.
-- **Focus Task**: Set and save your main focus/task for the day, always visible on your dashboard.
-- **GitHub Contribution Chart**: Displays a contribution graph for a specified GitHub user.
-- **Kanban Board**: Simple kanban board with columns (todo, doing, done). Add, drag, and remove tasks for visual task management.
 
-  - Move and resize widgets freely
-  - Lock/unlock layout
-  - Save and load custom layouts
-  - Preset layouts for different workflows
+![](img/image.png)
 
-- **Settings & Data Management:**
-  - Manage quick launch, reading list, and custom bookmarks
-  - Export/import your dashboard configuration
 
-- **Visuals:**
-  - Glassmorphism UI
-  - Video or AI-generated art backgrounds
 
-## Getting Started
+***
 
-1. **Clone or Download** this repository.
-2. **Load as Unpacked Extension** in Chrome:
-   - Go to `chrome://extensions/`
-   - Enable "Developer mode"
-   - Click "Load unpacked" and select the project folder
-3. Open a new tab to see Vyuham in action!
 
-## Project Structure
 
-- `manifest.json` – Chrome extension manifest
-- `newtab.html` – Main dashboard HTML
-- `script.js` – All dashboard logic and widgets
-- `styles.css` – Glassmorphism styles
-- `background.mp4` – Optional video background
-- `alarm.mp3` – Timer/Pomodoro alarm sound
+## 📖 Table of Contents
 
-## Credits
-- AI Art: [Pollinations API](https://pollinations.ai/)
-- GitHub Chart: [ghchart](https://ghchart.rshah.org/)
+- [Overview](#overview)
+- [Features](#features)
+- [Visuals](#visuals)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Tech Stack](#tech-stack)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Credits](#credits)
+- [License](#license)
 
----
+***
 
-Vyuham is open source and customizable for your personal productivity needs.
+## 🌟 Overview
+
+**Vyuham** replaces your default Chrome new tab with a customizable productivity dashboard featuring widgets, AI-generated backgrounds, timers, shortcuts, and more — all wrapped in a clean glassmorphism UI.
+
+Designed for:
+
+- Developers
+- Students
+- Productivity enthusiasts
+- Anyone who wants a beautiful new tab experience
+
+***
+
+## ✨ Features
+
+### 🔧 Core Widgets
+
+- **Clock & Timer** – Time, date, countdown, alarm
+- **Pomodoro Timer** – Customizable work/break cycles
+- **Calendar** – Clean monthly view
+- **Focus Task** – Your top priority always visible
+
+### 📚 Tools & Information
+
+- **Reading List** – Curated links with favicons
+- **Bookmarks** – Chrome bookmarks + custom bookmarks
+- **GitHub Contribution Chart** – For any GitHub user
+
+### 🧩 Productivity
+
+- **Kanban Board** – Todo → Doing → Done
+- **Quick Launch Shortcuts** – User-defined with site favicons
+- **Google Search** – Voice search + Google Lens shortcut
+
+### 🎨 Visual Experience
+
+- **AI-generated art wallpaper** (Pollinations)
+- **Video backgrounds**
+- **Glassmorphism UI**
+
+### 🎵 Media
+
+- **Music Player** – SoundCloud or Spotify embed
+
+### 🛠 Customization
+
+- Drag, move, and resize widgets
+- Lock/unlock layout
+- Export/import dashboard configuration
+- Preset layouts for workflows
+
+***
+
+## 🎥 Visuals
+
+*Add screenshots or GIFs here to showcase the UI.*
+
+Example placeholders:
+
+***
+
+## 🚀 Getting Started
+
+### Clone Repository
+
+```bash
+git clone https://github.com/prasadkankhar10/Vyuham
+Install as Chrome Extension
+
+Open chrome://extensions/
+
+Enable Developer Mode
+
+Click Load unpacked
+
+Select the project folder
+
+Open a new tab — Vyuham loads automatically!
+```
+
+***
+
+
+
+## 📁 Project Structure
+
+📦 Vyuham
+
+│
+
+├── manifest.json  
+│   └─ Defines extension permissions, new tab override, icons, and runtime scripts.  
+│
+
+├── newtab.html  
+│   └─ Main UI layout for the dashboard and all widgets.  
+│
+
+├── script.js  
+│   └─ Core logic handling:  
+│        • Widget initialization  
+│        • Drag/resize interactions  
+│        • Clock, Timer, Pomodoro logic  
+│        • Kanban board system  
+│        • Focus task saving  
+│        • AI Art / Video background loading  
+│        • Quick launch shortcuts  
+│        • Bookmarks + reading list  
+│        • LocalStorage-based configuration  
+│
+
+├── styles.css  
+│   └─ Glassmorphism design, animations, layout grid, responsiveness.  
+│
+
+├── background.mp4  
+│   └─ Optional looping video background.  
+│
+
+├── alarm.mp3  
+│   └─ Alarm sound for countdowns and Pomodoro.  
+│
+
+└── assets/ (optional future folder)  
+├── icons/  
+├── screenshots/  
+└── presets/
+
+***
+
+
+
+## 🧰 Tech Stack
+
+- HTML, CSS, JavaScript
+- Chrome Extensions API
+- LocalStorage / Sync Storage
+- Pollinations API (AI Wallpaper)
+- ghchart (GitHub contribution graph)
+
+***
+
+## 🗺 Roadmap
+
+
+
+- Weather Widget
+- Sticky Notes Widget
+- Theme Presets (Dark, Minimal, Neon)
+- Multi-device sync
+- Performance improvements
+- Widget marketplace
+
+***
+
+
+
+## 🤝 Contributing
+
+Contributions, ideas, and feature requests are welcome.  
+Feel free to open an issue or submit a pull request.
+
+***
+
+
+
+## 🏆 Credits
+
+- **AI Wallpapers:** Pollinations API
+- **GitHub Chart:** ghchart
+
+***
+
+
+
+## 📄 License
+
+MIT License.  
+Free to use, modify, and customize.
