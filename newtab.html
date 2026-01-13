@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Georgia:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div id="background-layer">
         <div id="bg-image"></div>
-        <video id="bg-video" autoplay muted loop playsinline>
+        <video id="bg-video" autoplay muted loop playsinline onerror="this.style.display='none'">
             <source src="background.mp4" type="video/mp4">
         </video>
     </div>
@@ -37,12 +37,7 @@
                 </nav>
                 <div class="settings-panels">
                     <div id="panel-layout" class="panel active">
-                        <div class="setting-row">
-                            <label>Lock Layout</label>
-                            <input type="checkbox" id="lock-layout">
                         </div>
-                        <button id="reset-layout-btn" class="danger-btn">Reset to Default Layout</button>
-                    </div>
 
                     <div id="panel-quick-launch" class="panel">
                         <div class="list-manager" id="ql-manager"></div>

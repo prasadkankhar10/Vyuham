@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Vyuham",
-  "version": "1.0",
-  "description": "Vyuham - My personal glassmorphism dashboard",
+  "version": "1.4",
+  "description": "Vyuham - Ultimate Glassmorphism Dashboard",
   "chrome_url_overrides": {
     "newtab": "newtab.html"
   },
